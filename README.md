@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+### Objective
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements a website showcasing and notifying visitors about
+the next SpaceX rocket launch, and displays details about next launches.
 
-## Available Scripts
+### Brief
 
-In the project directory, you can run:
+You're the last Front-End developer on earth. Everyone is leaving and going to Mars,
+to live a safer, cooler life there. The one problem is, people need to know when the next launch
+is happening, and that's where you come in the picture. You need to build a website that informs
+the public about the next launch, and give them information about future launches.
+Everyone is counting on you, go write that website.
 
-### `npm start`
+### Implmentation
+The project is bootstrapped with create react app and uses 
+  - Language: **JavaScript**
+  - Framework: **React**
+It connects to the **SpaceX-API** (Docs and playground: `https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4`)
+- Has two screens with navigation 
+- Displays a live countdown showing days, hours, minutes and seconds
+- The 'Upcoming Launches' screen/section displays the mission name, date, and launchpad like in the design
+- Has a share button for social media platforms, to share the next launch with friends
+- Fetches data safely with axios, with a fallback when an error occurs
+- Each launch should has a 'Bookmark' or 'Favorite' button, that adds it to a seperate 'Favorites'
+  table/screen. This is implemented using local storage (either save the launches data or its id for
+  later fetching)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### API Endpoints
+Two SpaceX Api endpoints are used to retrieve data
+- Next Launch Counter: 'https://api.spacexdata.com/v4/launches/next'
+- Upcoming Launches: 'https://api.spacexdata.com/v4/launches/upcoming'
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+With these endpoints, a simple GET request provides  all the data no authentication has been implemented.
 
-### `npm test`
+### Deliverables Checklits
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [] Make sure to include all source code in the repository.
+- [] **JavaScript** best practices
+- [] How you approach work through your commit history
+- [] Completeness: did you complete the features?
+- [] Correctness: does the functionality act in sensible, thought-out ways?
+- [] Maintainability: is it written in a clean, maintainable way?
+- [] Testing: is the system adequately tested? do your components have unit tests?
+- [] Responsiveness and full mobile compatibility
+- [] Elegantly use placeholders/skeletons when fetching data
+- [] Does the app look and feel all right visually? 
