@@ -38,13 +38,13 @@ With these endpoints, a simple GET request provides all the data no authenticati
 
 ### Deliverables Checklist
 
--   [] Make sure to include all source code in the repository.
--   [] **JavaScript** best practices
--   [] How you approach work through your commit history
--   [] Completeness: did you complete the features?
--   [] Correctness: does the functionality act in sensible, thought-out ways?
--   [] Maintainability: is it written in a clean, maintainable way?
--   [] Testing: is the system adequately tested? do your components have unit tests?
--   [] Responsiveness and full mobile compatibility
--   [] Elegantly use placeholders/skeletons when fetching data
--   [] Does the app look and feel all right visually?
+-   [ ] Make sure to include all source code in the repository.
+-   [ ] **JavaScript** best practices
+-   [ ] How you approach work through your commit history
+-   [ ] Completeness: did you complete the features?
+-   [ ] Correctness: does the functionality act in sensible, thought-out ways?
+-   [ ] Maintainability: is it written in a clean, maintainable way?
+-   [ ] Testing: is the system adequately tested? do your components have unit tests?
+-   [ ] Responsiveness and full mobile compatibility
+-   [ ] Elegantly use placeholders/skeletons when fetching data
+-   [ ] Does the app look and feel all right visually?
