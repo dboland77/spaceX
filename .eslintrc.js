@@ -49,6 +49,7 @@ module.exports = {
                     'error',
                     { devDependencies: ['**/setupTests.ts', '**/**.test.tsx'] },
                 ],
+                'import/no-unresolved': 'off',
             },
         },
     ],
