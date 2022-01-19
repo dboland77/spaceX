@@ -27,6 +27,7 @@ module.exports = {
         'array-callback-return': 'warn',
         'consistent-return': 'warn',
         'default-case': 'warn',
+        'react/prop-types': 'off',
     },
     overrides: [
         {
@@ -49,7 +50,6 @@ module.exports = {
                     'error',
                     { devDependencies: ['**/setupTests.ts', '**/**.test.tsx'] },
                 ],
-                'import/no-unresolved': 'off',
             },
         },
     ],
